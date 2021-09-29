@@ -17,10 +17,11 @@ class MainActivity : AppCompatActivity() {
             //두개의 변수에 들어있는 값 검사 (맞는 id/pass)
             //맞을 때 => 틀릴때 분기처리 (if 활용문)
             //id도 맞고 비번도 맞아야한다 그래야 관리자
+            val name = "이재현"
 
             if (inputId =="wogus3132@naver.com" && inputPassword == "dhtmdgml12@")
                 //id  && pw 같다면 관리자입니다 toast
-            {Toast.makeText(this, "관리자입니다", Toast.LENGTH_SHORT).show()}
+            {Toast.makeText(this, "${name}관리자입니다", Toast.LENGTH_SHORT).show()}
 
 
             else {
